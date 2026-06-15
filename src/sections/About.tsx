@@ -22,12 +22,12 @@ export function About() {
       </div>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:grid-rows-[9rem_auto_9rem]">
-        <article className="md:hidden col-span-1 row-span-1 rounded-2xl border border-(--card-border) bg-linear-to-br from-(--card) to-(--card-border) p-6">
+        <article className="md:hidden col-span-1 row-span-1 overflow-hidden rounded-2xl border border-(--card-border) bg-linear-to-br from-(--card) to-(--card-border) p-6">
           <p className="text-xs uppercase tracking-[0.2em] text-violet-300">Profile</p>
-          <h3 className="mt-2 break-words text-2xl font-black leading-tight tracking-tight sm:text-3xl">
+          <h3 className="mt-2 line-clamp-2 break-words text-xl font-black leading-tight tracking-tight sm:text-2xl">
             Adityan Thirumani Srinivasan
           </h3>
-          <p className="mt-2 break-words text-xs leading-snug text-(--muted)">
+          <p className="mt-2 line-clamp-2 break-words text-xs leading-snug text-(--muted)">
             Computer Science Student at UW-Madison
           </p>
         </article>
@@ -42,13 +42,13 @@ export function About() {
           />
         </article>
 
-        <article className="hidden md:flex col-span-1 row-span-1 rounded-2xl border border-(--card-border) bg-linear-to-br from-(--card) to-(--card-border) p-7">
+        <article className="hidden md:flex col-span-1 row-span-1 overflow-hidden rounded-2xl border border-(--card-border) bg-linear-to-br from-(--card) to-(--card-border) p-7">
           <div className="flex w-full flex-col justify-center text-center">
             <p className="text-xs uppercase tracking-[0.2em] text-violet-300">Profile</p>
-            <h3 className="mt-2 break-words text-3xl font-black leading-tight tracking-tight xl:text-4xl">
+            <h3 className="mt-2 line-clamp-2 break-words text-2xl font-black leading-tight tracking-tight lg:text-3xl xl:text-4xl">
               Adityan Thirumani Srinivasan
             </h3>
-            <p className="mt-2 break-words text-[10px] uppercase leading-snug tracking-[0.18em] text-(--muted)">
+            <p className="mt-2 line-clamp-2 break-words text-[10px] uppercase leading-snug tracking-[0.18em] text-(--muted)">
               Computer Science Student at UW-Madison
             </p>
           </div>

@@ -1,25 +1,14 @@
 # Adityan Portfolio Website
 
-Personal portfolio website for Adityan Thirumani Srinivasan, built with Next.js, TypeScript, and Tailwind CSS.
+I’m Adityan Thirumani Srinivasan — a Computer Science student at UW–Madison who enjoys turning ideas into real products. I build productivity tools, browser extensions, and applied AI projects, and I’ve done research in computer vision and machine learning.
 
-## Included
+## Tech Stack
 
-- Next.js + TypeScript setup
-- Tailwind CSS v4 setup
-- Single-page portfolio layout
-- Sections for:
-  - Hero
-  - About
-  - Projects
-  - Skills
-  - Highlights
+- Web: Next.js, React, TypeScript, Tailwind CSS
+- Programming: Python, Java, Flutter, MySQL
+- Design: HTML, CSS, Figma, Adobe Photoshop
 
-## Quick start
+## Links
 
-1. Install dependencies:
-   - `npm install`
-2. Start development:
-   - `npm run dev`
-3. Build for production:
-   - `npm run build`
-4. Open [localhost:3000](http://localhost:3000)
+- GitHub: https://github.com/Adityan-TS
+- LinkedIn: https://www.linkedin.com/in/adityan-srinivasan/

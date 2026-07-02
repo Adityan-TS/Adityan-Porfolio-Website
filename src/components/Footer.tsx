@@ -6,7 +6,7 @@ export function Footer() {
   const activeSocials = socials.filter((social) => social.url !== "#");
 
   return (
-    <footer className="border-t border-white/5 bg-black/20 px-4 py-10 backdrop-blur-sm sm:px-0 sm:py-12">
+    <footer className="border-t border-(--line-soft) bg-(--panel-soft) px-4 py-10 backdrop-blur-sm sm:px-0 sm:py-12">
       <div className="section">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
           <div className="flex items-center gap-3 text-base text-(--muted)">

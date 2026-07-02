@@ -87,7 +87,7 @@ export function Skills() {
                 <div key={copy} className="flex items-center gap-8 px-4">
                   {beltChunk.map((item, index) => (
                     <div key={`${copy}-${item}-${index}`} className="flex items-center gap-2">
-                      <span className="h-2 w-2 rounded-full bg-violet-400" />
+                      <span className="h-2 w-2 rounded-full bg-(--accent)" />
                       <span className="text-xs uppercase tracking-wider text-(--muted)">
                         {item}
                       </span>

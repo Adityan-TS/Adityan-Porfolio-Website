@@ -25,7 +25,7 @@ function TimelineColumn({
       <h3 className="text-lg font-bold text-(--foreground) sm:text-xl">{heading}</h3>
 
       <div className="relative mt-6">
-        <div className="pointer-events-none absolute top-0 bottom-0 left-4 w-px bg-white/10" />
+        <div className="pointer-events-none absolute top-0 bottom-0 left-4 w-px bg-(--line-soft)" />
         <div className="space-y-5">
           {items.map((item, index) => (
             <motion.div
@@ -36,14 +36,14 @@ function TimelineColumn({
               transition={{ duration: 0.35, delay: index * 0.04 }}
               className="relative pl-12"
             >
-              <div className="absolute left-4 top-4 h-3 w-3 -translate-x-1/2 rounded-full bg-(--background) ring-2 ring-white/15" />
+              <div className="absolute left-4 top-4 h-3 w-3 -translate-x-1/2 rounded-full bg-(--background) ring-2 ring-(--line-soft)" />
               <div
                 className={`absolute left-4 top-4 h-3 w-3 -translate-x-1/2 rounded-full bg-linear-to-br ${item.color} opacity-80 blur-[2px]`}
               />
 
-              <div className="relative rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div className="relative rounded-2xl border border-(--line-soft) bg-(--panel-soft) p-4">
                 {item.date ? (
-                  <span className="absolute top-3 right-3 rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-semibold text-(--muted)">
+                  <span className="absolute top-3 right-3 rounded-full border border-(--line-soft) bg-(--panel-soft) px-2 py-1 text-[10px] font-semibold text-(--muted)">
                     {item.date}
                   </span>
                 ) : null}
@@ -85,10 +85,10 @@ function ProgramsResearchGrid({ items }: { items: TimelineItem[] }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.35, delay: index * 0.04 }}
-            className="relative rounded-2xl border border-white/10 bg-white/5 p-5"
+            className="relative rounded-2xl border border-(--line-soft) bg-(--panel-soft) p-5"
           >
             {item.date ? (
-              <span className="absolute top-3 right-3 rounded-full border border-white/10 bg-white/5 px-2 py-1 text-[10px] font-semibold text-(--muted)">
+              <span className="absolute top-3 right-3 rounded-full border border-(--line-soft) bg-(--panel-soft) px-2 py-1 text-[10px] font-semibold text-(--muted)">
                 {item.date}
               </span>
             ) : null}
@@ -124,7 +124,7 @@ export function Other() {
       title: "UW–Madison",
       subtitle: "BSc in Computer Science",
       desc: "Currently studying Computer Science while building AI-powered products and applied machine learning systems.",
-      color: "from-violet-500 to-purple-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "mayoor",
@@ -133,7 +133,7 @@ export function Other() {
       title: "Mayoor Private School",
       subtitle: "High School Diploma (Abu Dhabi)",
       desc: "Served as Robotics Team Lead and President of the Math Club, leading technical and competitive initiatives.",
-      color: "from-fuchsia-500 to-pink-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "harvard-summer",
@@ -142,7 +142,7 @@ export function Other() {
       title: "Harvard Summer School",
       subtitle: "Kali Linux + Python (Abu Dhabi)",
       desc: "Completed coursework with high distinction (Ethical Hacking: 97.2%, Python: 98.7%).",
-      color: "from-indigo-500 to-violet-500",
+      color: "from-zinc-400 to-stone-200",
     },
   ];
 
@@ -154,7 +154,7 @@ export function Other() {
       title: "Zeriux Labs",
       subtitle: "Co-Founder & CEO",
       desc: "Leading development of ProAct+, ProSync+, and FocusForge, productivity and AI tools used by 700+ users. Managing product strategy, engineering workflows, and a 25+ member intern team across full lifecycle from ideation to deployment.",
-      color: "from-amber-500 to-orange-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "dyne",
@@ -163,7 +163,7 @@ export function Other() {
       title: "Dyne Research",
       subtitle: "AI Intern (Abu Dhabi)",
       desc: "Developed NeuroMedic, a deep learning system for brain tumor prediction using CT/MRI scans, implementing CNN architectures and medical imaging pipelines, achieving 96% accuracy.",
-      color: "from-emerald-500 to-teal-500",
+      color: "from-zinc-400 to-stone-200",
     },
   ];
 
@@ -175,7 +175,7 @@ export function Other() {
       title: "ThinkingBeyond (BeyondAI Program)",
       subtitle: "AI Researcher",
       desc: "Built a Dynamic Graph Neural Network (DGNN) for satellite collision detection using PyTorch Geometric and SGP4 orbital data, achieving 1.0 F1-score and an accuracy of 99% on anomaly prediction tasks.",
-      color: "from-sky-500 to-cyan-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "ccir",
@@ -184,7 +184,7 @@ export function Other() {
       title: "Cambridge Centre for International Research (Future Scholars Program)",
       subtitle: "AI Researcher",
       desc: "Developed HybridEnhancementNet for low-light image enhancement by combining Zero-DCE and CIDNet, achieving SOTA results on LOL dataset with a PSNR of 27.46 dB and SSIM of 0.956, outperforming existing methods.",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "harvard-venture-tech",
@@ -193,7 +193,7 @@ export function Other() {
       title: "Harvard Venture TECH Program",
       subtitle: "AI Intern",
       desc: "Built Ventra-AI, a Flask-based ML system for wind turbine power prediction using Random Forest, with a production-ready pipeline and R² score of 0.9927.",
-      color: "from-cyan-500 to-emerald-500",
+      color: "from-zinc-400 to-stone-200",
     },
     {
       key: "nyas",
@@ -202,7 +202,7 @@ export function Other() {
       title: "New York Academy of Sciences",
       subtitle: "Team Lead",
       desc: "Led development of a deepfake detection system using MobileNetV2 and TensorFlow, training on 140K+ images and achieving 95% accuracy with data augmentation and transfer learning.",
-      color: "from-emerald-500 to-teal-500",
+      color: "from-zinc-400 to-stone-200",
     },
   ];
 

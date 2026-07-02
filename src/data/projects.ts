@@ -29,7 +29,7 @@ export const projects: Project[] = [
     github: "https://github.com/Adityan-TS/ProAct",
     featured: true,
     deviceType: "mobile",
-    bgColor: "bg-linear-to-br from-[#14111f] via-[#1a1430] to-[#211336]",
+    bgColor: "bg-linear-to-br from-zinc-800 via-zinc-700 to-neutral-700",
     screenshots: [proactImage, proactImage, proactImage],
   },
   {
@@ -42,9 +42,9 @@ export const projects: Project[] = [
     featured: true,
     deviceType: "desktop",
     typeLabel: "AI Research",
-    bgColor: "bg-linear-to-br from-[#0f1117] via-[#131827] to-[#1a1f36]",
+    bgColor: "bg-linear-to-br from-zinc-800 via-zinc-700 to-neutral-700",
     screenshots: [hybridNetImage],
-    desktopImageClassName: "object-cover object-top bg-neutral-950",
+    desktopImageClassName: "object-cover object-top",
   },
   {
     id: "focusforge",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     featured: true,
     deviceType: "desktop",
     typeLabel: "Browser Extension",
-    bgColor: "bg-linear-to-br from-[#101715] via-[#11201c] to-[#15312a]",
+    bgColor: "bg-linear-to-br from-zinc-800 via-zinc-700 to-neutral-700",
     screenshots: [focusforgeImage],
   },
   {
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     featured: true,
     deviceType: "desktop",
     typeLabel: "AI Model",
-    bgColor: "bg-linear-to-br from-[#16111d] via-[#1d1327] to-[#2a1530]",
+    bgColor: "bg-linear-to-br from-zinc-800 via-zinc-700 to-neutral-700",
     screenshots: [neuroMedicImage],
   },
 ];

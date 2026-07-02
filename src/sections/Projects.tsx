@@ -13,12 +13,14 @@ export function Projects() {
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 -left-1/4 h-96 w-96 rounded-full bg-violet-500/20 blur-3xl"
+          className="absolute top-1/4 -left-1/4 h-96 w-96 rounded-full blur-3xl"
+          style={{ background: "var(--hero-orb-a)" }}
           animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute right-0 bottom-1/4 h-96 w-96 rounded-full bg-purple-500/20 blur-3xl"
+          className="absolute right-0 bottom-1/4 h-96 w-96 rounded-full blur-3xl"
+          style={{ background: "var(--hero-orb-b)" }}
           animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.3, 0.5] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
         />
